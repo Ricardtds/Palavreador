@@ -20,10 +20,11 @@ function putReplace(){
     document.getElementById("accordionPalavrearBody").innerHTML = newStr;
 }
 
-
-/*
-eu tenho um estilo bem unico de assistir( shounen onde o personagem fica forte o tempo todo tomando proporções totalmente imagináveis, tem humor e poderzinho), nem vem me categorizar como otacu ou weeb, eu sou o hetero top dos animes
-
-éú ténhõ úm éstilõ bém único dé ãssistir( shõunen õnde õ pérsonagém ficã fõrte õ témpõ tõdõ tõmãndõ prõpõrçõés tõtãlménté imãginávéis, tém húmõr é põdérzinhõ), ném vém mé cãtégõrizãr cõmõ õtacú õú wééb, éu sõu õ hétérõ tõp dõs ãnimé
-
-*/
+function copyPalavreado() {
+    var copyText = document.getElementById("accordionPalavrearBody").innerText
+    if(copyText == ""){
+        strReplace();
+        copyText = document.getElementById("accordionPalavrearBody").innerText
+    }
+    navigator.clipboard.writeText(copyText);
+} 
