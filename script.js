@@ -8,7 +8,7 @@ function strReplace(){
     } else {
         newStr = textArea.value;
     }
-
+    newStr = newStr.replace(/(\r\n|\r|\n)/g, '<br>');
     newStr = newStr.replace(/e/g, "é");
     newStr = newStr.replace(/o/g, "õ");
     newStr = newStr.replace(/u/g, "ú");
@@ -17,7 +17,7 @@ function strReplace(){
 }
 
 function putReplace(){
-    document.getElementById("textoPalavreado").innerHTML = newStr;
+    document.getElementById("accordionPalavrearBody").innerHTML = newStr;
 }
 
 

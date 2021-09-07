@@ -16,12 +16,22 @@
             <textarea style="height: 30vh" id="textAreaInput" type="text" class="form-control" aria-label="With textarea"></textarea>
         </div>  
         
-        <div class="bg-light text-dark rounded">
-            <span id="textoPalavreado">
-            </span>
-        </div>
-    </div>
+        <div class="accordion" id="accordionPalavrear">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Frase Palavreada
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show text-dark" aria-labelledby="headingOne" data-bs-parent="#accordionPalavrear">
+                <div id="accordionPalavrearBody" class="accordion-body">
 
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>
