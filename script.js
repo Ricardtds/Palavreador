@@ -5,7 +5,10 @@ textArea.placeholder = "Eu tenho um estilo bem unico de assistir( shounen onde o
 function strReplace(){
     if (textArea.value == ""){
         newStr = textArea.placeholder;
+    } else {
+        newStr = textArea.value;
     }
+
     newStr = newStr.replace(/e/g, "é");
     newStr = newStr.replace(/o/g, "õ");
     newStr = newStr.replace(/u/g, "ú");
