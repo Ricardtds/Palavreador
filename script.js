@@ -1,5 +1,5 @@
 let textArea = document.getElementById('textAreaInput');
-let newStr = textArea.value;
+let newStr;
 textArea.placeholder = "Eu tenho um estilo bem unico de assistir( shounen onde o personagem fica forte o tempo todo tomando proporções totalmente imagináveis, tem humor e poderzinho), nem vem me categorizar como otacu ou weeb, eu sou o hetero top dos animes";
 
 function strReplace(){
