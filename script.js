@@ -8,11 +8,11 @@ function strReplace(){
     } else {
         newStr = textArea.value;
     }
-    newStr = newStr.replace(/(\r\n|\r|\n)/g, '<br>');
-    newStr = newStr.replace(/e/g, "é");
-    newStr = newStr.replace(/o/g, "õ");
-    newStr = newStr.replace(/u/g, "ú");
-    newStr = newStr.replace(/a/g, "ã");
+    newStr = newStr.replace(/(\r\n|\r|\n)/gi, '<br>');
+    newStr = newStr.replace(/e/gi, "é");
+    newStr = newStr.replace(/o/gi, "õ");
+    newStr = newStr.replace(/u/gi, "ú");
+    newStr = newStr.replace(/a/gi, "ã");
     putReplace();
 }
 
