@@ -1,6 +1,7 @@
+let copyText = document.getElementById("accordionPalavrearBody")
 let textArea = document.getElementById('textAreaInput');
 let newStr;
-textArea.placeholder = "Eu tenho um estilo bem unico de assistir( shounen onde o personagem fica forte o tempo todo tomando proporções totalmente imagináveis, tem humor e poderzinho), nem vem me categorizar como otacu ou weeb, eu sou o hetero top dos animes";
+textArea.placeholder = "Quando as pessoas vieram para a América, nos trouxeram com elas. Nós somos os antigos. Mas há novos deuses na América. Agora eles querem nos destruir. Guerras estão chegando e eu tenho um grande papel para você. Shadow Moon. Eu vou acabar com ele. Eu vou acabar com todos eles.";
 
 function strReplace(){
     if (textArea.value == ""){
@@ -9,10 +10,10 @@ function strReplace(){
         newStr = textArea.value;
     }
     newStr = newStr.replace(/(\r\n|\r|\n)/gi, '<br>');
-    newStr = newStr.replace(/e/gi, "é");
-    newStr = newStr.replace(/o/gi, "õ");
-    newStr = newStr.replace(/u/gi, "ú");
-    newStr = newStr.replace(/a/gi, "ã");
+    newStr = newStr.replace(/a/g, "ã").replace(/A/g, "Ã");
+    newStr = newStr.replace(/e/g, "é").replace(/E/g, "É");
+    newStr = newStr.replace(/o/g, "õ").replace(/O/g, "Õ");
+    newStr = newStr.replace(/u/g, "ú").replace(/U/g, "Ú");
     putReplace();
 }
 
@@ -21,10 +22,8 @@ function putReplace(){
 }
 
 function copyPalavreado() {
-    var copyText = document.getElementById("accordionPalavrearBody").innerText
-    if(copyText == ""){
+    if(copyText.innerText == ""){
         strReplace();
-        copyText = document.getElementById("accordionPalavrearBody").innerText
     }
-    navigator.clipboard.writeText(copyText);
+    navigator.clipboard.writeText(copyText.innerText);
 } 
